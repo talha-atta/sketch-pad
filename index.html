@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <head>
   <meta charset="utf-8" />
-  <title>Etch A Sketch</title>
+  <title>Sketch Pad</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <html>
   <body>
     <header>
-      <h1>Etch A Sketch</h1>
+      <h1>Sketch Pad</h1>
     </header>
 
     <div class="buttons">
       <div id="colors">
-        <button id="color">Black Mode</button>
-        <button id="color">Rainbow Mode</button>
+        <button id="black" class="active" onclick="blackMode()">
+          Black Mode
+        </button>
+        <button id="rainbow" onclick="rainbowMode()">Rainbow Mode</button>
         <button id="reset" onclick="resetGrid()">Reset Grid</button>
       </div>
     </div>
@@ -24,7 +26,7 @@
     </div>
 
     <footer>
-      Created by Talha Atta
+      Created by <a href="https://twitter.com/talha_atta6">Talha Atta </a>
     </footer>
 
     <script src="script.js"></script>

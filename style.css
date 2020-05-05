@@ -1,19 +1,54 @@
+@font-face {
+  font-family: "zukaDoodle";
+  src: url("fonts/ZukaDoodle.ttf");
+}
+
+body {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.8)
+    ),
+    url("img/background.jpg") center center;
+  color: #393e46;
+  height: 90%;
+  width: 100%;
+}
+
 header {
   text-align: center;
   height: 50px;
 }
 
+h1 {
+  font-family: "zukaDoodle";
+  font-size: 3rem;
+  margin: 2rem 0;
+}
+
 footer {
   text-align: center;
-  padding: 50px;
+  padding: 2rem;
+  font-family: "zukaDoodle";
+  font-size: 1.5rem;
+}
+
+button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.2s ease;
 }
 
 /* CLASSES */
 .buttons {
-  position: relative;
   margin: auto;
-  height: 50px;
+  height: 100px;
   width: 500px;
+}
+
+.options button {
+  margin-right: 1rem;
+  background-color: #fff;
+  color: #393e46;
 }
 
 .container {
@@ -25,12 +60,8 @@ footer {
   margin: auto;
   height: 500px;
   max-height: 500px;
-  border: 1px solid black;
+  border: 1px solid lightgray;
   background-color: white;
-}
-
-.black {
-  background-color: black;
 }
 
 .column {
@@ -48,9 +79,32 @@ footer {
 #reset {
   float: right;
   margin: 10px;
+  background-color: white;
+  color: black;
+  width: 100px;
+  height: 50px;
+  font-weight: bold;
+  border-radius: 10px;
 }
 
-#color {
+#black {
   float: left;
   margin: 10px;
+  background-color: white;
+  color: black;
+  width: 100px;
+  height: 50px;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+#rainbow {
+  float: left;
+  margin: 10px;
+  background-color: white;
+  color: black;
+  width: 100px;
+  height: 50px;
+  font-weight: bold;
+  border-radius: 10px;
 }
