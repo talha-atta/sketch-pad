@@ -5,8 +5,28 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 
-<body>
-  <h1 id="title">Etch A Sketch</h1>
-  <div id="container"></div>
-  <script src="script.js"></script>
-</body>
+<html>
+  <body>
+    <header>
+      <h1>Etch A Sketch</h1>
+    </header>
+
+    <div class="buttons">
+      <div id="colors">
+        <button id="color">Black Mode</button>
+        <button id="color">Rainbow Mode</button>
+        <button id="reset" onclick="resetGrid()">Reset Grid</button>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="canvas"></div>
+    </div>
+
+    <footer>
+      Created by Talha Atta
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

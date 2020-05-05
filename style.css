@@ -1,25 +1,56 @@
-:root {
-  --grid-cols: 1;
-  --grid-rows: 1;
-}
-
-#title {
+header {
   text-align: center;
+  height: 50px;
 }
 
-#container {
-  display: grid;
+footer {
+  text-align: center;
+  padding: 50px;
+}
+
+/* CLASSES */
+.buttons {
   position: relative;
-  outline: 1px solid #000;
   margin: auto;
-  height: 600px;
-  width: 600px;
-  grid-template-rows: repeat(var(--grid-rows), 1fr);
-  grid-template-columns: repeat(var(--grid-cols), 1fr);
+  height: 50px;
+  width: 500px;
 }
 
-.grid-item {
-  padding: 1em;
-  border: 1px solid #000;
-  text-align: center;
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.canvas {
+  margin: auto;
+  height: 500px;
+  max-height: 500px;
+  border: 1px solid black;
+  background-color: white;
+}
+
+.black {
+  background-color: black;
+}
+
+.column {
+  padding: 0px;
+  margin: 0px;
+}
+
+.row {
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+}
+
+/* IDs */
+#reset {
+  float: right;
+  margin: 10px;
+}
+
+#color {
+  float: left;
+  margin: 10px;
 }
